@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="select.js" defer></script>
 </head>
 <body>
-    <div class="quizContainer">
-        <h2>Question text</h2>
-        <ul>
-            <li><input type="radio"><label for="a">a</label></li>
-            <li><input type="radio"><label for="b">b</label></li>
-            <li><input type="radio"><label for="c">c</label></li>
-            <li><input type="radio"><label for="d">d</label></li>
-        </ul>
-        <button>Submit</button>
+    <div class="quizContainer" id="quiz">
+        <div class="quizhead">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li><input type="radio" id="a" name="option" class="option"><label id="a_text" for="a">a</label></li>
+                <li><input type="radio" id="b" name="option" class="option"><label id="b_text" for="b">b</label></li>
+                <li><input type="radio" id="c" name="option" class="option"><label id="c_text" for="c">c</label></li>
+                <li><input type="radio" id="d" name="option" class="option"><label id="d_text" for="d">d</label></li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
     </div>
 </body>
 </html>
