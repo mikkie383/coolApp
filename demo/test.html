@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script>
+        function check(){
+            let userinput = parseFloat(document.getElementById('userinput').value);
+            let weekOfDay = new Date().getDay();
+            let total = 0;
+            if(userinput >= 100 && weekOfDay == 4 || weekOfDay == 6){
+                //get the user 20% off
+                total = userinput * 0.8;
+            }else{
+                total = userinput;
+            }
+            document.getElementById('out').innerHTML = total;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="userinput">
+    <button type="button" onclick="check()">Check</button>
+    <div id="out"></div>
+</body>
+</html>
+         
+         

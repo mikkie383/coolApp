@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="HTML">
+<meta name="description" content="">
+<meta name="author" content="Keagan Kingsford">
+<meta http-equiv="refresh" content="30">
+<link rel="stylesheet" href="style.css">
+<title>First Project</title>
+    <script>
+        
+        
+    function info(){
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        return document.getElementById('result').innerHTML = "Your name is " + name +", and your age is "+ age +".";
+    }
+    </script>
+</head>
+
+<body>
+<p>put name here</p>
+<input type="text" id="name">
+<p>put age here</p>
+<input type="text" id="age">
+
+<button type="button" onclick="info()">Push Here</button>
+<div id="result"></div>
+<div class="content">
+    <div class="purple"></div>
+    <div class="black"></div>
+    <div class="brown"></div>
+</div>
+
+</body>
+
+</html>
