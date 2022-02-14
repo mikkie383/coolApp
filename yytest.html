@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="getResult()">Get</button>
+    <img src="" alt="" class="getImg">
+    <script>
+
+        const xhr = new XMLHttpRequest();
+        const url = 'http://localhost:51555/api/testimonies';
+
+        xhr.open('GET', url);
+        xhr.onreadystatechange = someHandler;
+        xhr.send();
+
+        function getResult(){
+             fetch(`https://byui-cse.github.io/cse121b-course/week05/temples.json`)
+                    .then(data =>{
+                    return data.json();
+            }).then(displayResults);
+        }
+
+        function displayResults(data){
+            const postImg = document.querySelector('.getImg');
+            //postImg.src = URL.createObjectURL(data[0].contentImg);
+            return console.log(data);
+        }
+
+
+        const formData = new FormData();
+        formData.append()
+    </script>
+</body>
+</html>

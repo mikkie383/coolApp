@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Fancy Calculator</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #d2e8ff;
+            background-image: linear-gradient(62deg, #d2e8ff 0%, #E0C3FC 100%);
+            font-family: 'Lato', sans-serif;
+        }
+        h1{
+            margin-top: 6%;
+        }
+        table {
+            margin-top: 6%;
+            width: 100%;
+        }
+        td, th{
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fancy Calculator</h1>
+    <hr>
+    <table>
+        <tr>
+          <th>Method</th>
+          <th>Number1</th>
+          <th>Operator</th>
+          <th>Number2</th>
+          <th>Equal</th>
+          <th>Answer</th>
+        </tr>
+        <tr>
+          <td>Addition:</td>
+          <td><input type="text" id="add1" value="0"></td>
+          <td>+</td>
+          <td><input type="text" id="add2" value="0"></td>
+          <td><button type="button" onclick="calAdd()">=</button></td>
+          <td><span id="addtion">0</span></td>
+        </tr>
+        <tr>
+          <td>Subtraction:</td>
+          <td><input type="text" id="sub1" value="0"></td>
+          <td>-</td>
+          <td><input type="text" id="sub2" value="0"></td>
+          <td><button type="button" onclick="calSub()">=</button></td>
+          <td><span id="subtraction">0</span></td>
+        </tr>
+        <tr>
+          <td>Multiplication:</td>
+          <td><input type="text" id="mul1" value="0"></td>
+          <td>×</td>
+          <td><input type="text" id="mul2" value="0"></td>
+          <td><button type="button" onclick="calMul()">=</button></td>
+          <td><span id="multiplication">0</span></td>
+        </tr>
+        <tr>
+          <td>Division:</td>
+          <td><input type="text" id="div1" value="0"></td>
+          <td>÷</td>
+          <td><input type="text" id="div2" value="0"></td>
+          <td><button type="button" onclick="calDiv()">=</button></td>
+          <td><span id="division">0</span></td>
+        </tr>
+        
+      </table>
+      <script src="js/cal.js"></script>
+</body>
+</html>

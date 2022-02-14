@@ -1,69 +1,69 @@
-html{
-    /* height: 100%; */
+html {
+  /* height: 100%; */
 }
-body{
-    background-color: #c6c972;
-    background-image: url(img/MdongBack.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-position: center; */
-}
-
-.container{
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  background-color: #c6c972;
+  background-image: url(img/MdongBack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-position: center; */
 }
 
-header{
-    height: 118px;
-    text-align: center;
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav{
-    background-color: rgba(5, 5, 5, 0.274);
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+header {
+  height: 118px;
+  text-align: center;
 }
 
-main{
-    height: 400px;
-    text-align: center;
-    padding-top: 40px;
-    padding-left: 240px;
-    padding-right: 240px;
-    color: rgb(9, 59, 13);
-    text-shadow: white 0px 0px 10px;
+nav {
+  background-color: rgba(5, 5, 5, 0.274);
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-h1{
-    font-size: 84px;
-}
-p{
-    font-size: 18px;
-}
-#reserve{
-    font-weight: bold;
-    color: black;
-    /* text-decoration: none; */
+main {
+  height: 400px;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 240px;
+  padding-right: 240px;
+  color: rgb(9, 59, 13);
+  text-shadow: white 0px 0px 10px;
 }
 
-footer{
-    background-color: rgba(3, 3, 3, 0.616);
-    padding-top: 50px;
-    padding-bottom: 50px;
+h1 {
+  font-size: 84px;
 }
-footer p{
-    font-size: 10px;
-    text-align: center;
-    color: rgb(214, 212, 212);
+p {
+  font-size: 18px;
+}
+#reserve {
+  font-weight: bold;
+  color: black;
+  /* text-decoration: none; */
+}
+
+footer {
+  background-color: rgba(3, 3, 3, 0.616);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer p {
+  font-size: 10px;
+  text-align: center;
+  color: rgb(214, 212, 212);
 }

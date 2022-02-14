@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Train+One&display=swap" rel="stylesheet">
+    <title>Hangman</title>
+    <style>
+        body{
+            background-color: #cbfae0;
+            background-image: linear-gradient(45deg, #cbfae0 0%, #fffc9b 100%);
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #mistakes{
+            color: red;
+        }
+        .container{
+            font-family: 'Syne Mono', monospace;
+        }
+        h1{
+            margin-top: 2%;
+            font-family: 'Train One', cursive; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Hangman</h1>
+        <div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong">6</span></div>
+        <div class="text-center">
+            <img src="./image/0.jpg" alt="hangmanPic" id="hangmanPic">
+            <p class="hide1">Enter a word to be guessed!</p>
+            <input type="password" id="theKey" class="hide2">
+            <button type="button" onclick="guessedWord()" class="hide3">Enter to guess</button>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+            <div id="keyboard"></div>
+            <button class="btn btn-info" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="js/hangmen.js"></script>
+</body>
+</html>
