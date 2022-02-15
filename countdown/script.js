@@ -7,7 +7,7 @@
     
     var interval = setInterval(countdown, 1000);
     function countdown() {
-        let newYearsDate = new Date("1 Jan 2021");
+        let newYearsDate = new Date("1 Jan 2023");
         // newYearsDate.setHours(18);
         // newYearsDate.setMinutes(0);
         // newYearsDate.setSeconds(0);
