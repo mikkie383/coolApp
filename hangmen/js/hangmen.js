@@ -37,7 +37,7 @@ function updateHangmanPic() {
 }
 
 function checkIfGameWon() {
-    if (wordStatus === answer) {
+    if (wordStatus === answer.toLowerCase()) {
         document.getElementById("keyboard").innerHTML = "You won!!!";
     }
 }
