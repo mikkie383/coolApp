@@ -4,6 +4,7 @@ let maxWrong = 6;
 let mistakes = 0;
 let guessed = [];
 let wordStatus = null;
+let temp;
 
 function generateButton() {
     let buttonHTML = "abcdefghijklmnopqrstuvwxyz".split("").map(letter =>
@@ -20,11 +21,11 @@ function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
     document.getElementById(chosenLetter).setAttribute("disabled", true);
 
-    if (answer.indexOf(chosenLetter) >= 0) {
+    if (temp.indexOf(chosenLetter) >= 0) {
         guessedWord();
         checkIfGameWon();
     }
-    else if (answer.indexOf(chosenLetter) === -1) {
+    else if (temp.indexOf(chosenLetter) === -1) {
         mistakes++;
         updateMistakes();
         checkIfGameLost();
@@ -37,7 +38,7 @@ function updateHangmanPic() {
 }
 
 function checkIfGameWon() {
-    if (wordStatus === answer.toLowerCase()) {
+    if (wordStatus === temp) {
         document.getElementById("keyboard").innerHTML = "You won!!!";
     }
 }
@@ -52,6 +53,7 @@ function checkIfGameLost() {
 let noMoreGenerate = 0;
 function guessedWord() {
     answer = document.getElementById("theKey").value;
+    temp = answer.toLowerCase();
     wordStatus = answer.split("").map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join("");
 
     document.getElementById("wordSpotlight").innerHTML = wordStatus;
